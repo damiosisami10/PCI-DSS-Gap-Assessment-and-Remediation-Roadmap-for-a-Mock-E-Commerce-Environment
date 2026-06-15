@@ -55,28 +55,3 @@ Document data flows       Identify gaps               Prioritize by risk        
 ```
 
 Each phase produces a discrete artifact, so the project folder functions as a self-contained audit package. The risk scoring model is intentionally kept transparent and formula-driven so that any reviewer can audit the scoring logic directly in the spreadsheet rather than trusting a black-box output.
-
-in v4.0.
-- **Shows a risk-based mindset** by prioritizing remediation effort using scored likelihood and impact ratings rather than treating all gaps as equally urgent.
-- **Demonstrates ability to translate technical findings into business-readable outputs,** including executive dashboards, radar charts, and phased roadmaps suitable for steering committee review.
-- **Shows readiness to coordinate cross-functional remediation work,** with RACI assignments and sprint-based planning that mirrors how compliance programs operate inside organizations like SCIEX.
-- **Demonstrates documentation discipline and audit readiness,** producing reusable templates and evidence inventories that reduce the effort of future assessment cycles.
-
-## Getting Started
-
-**Prerequisites:** Microsoft Excel or Google Sheets, a PDF viewer, and Lucidchart (free tier) or draw.io to view and edit diagrams.
-
-```bash
-# Clone the repository
-git clone https://github.com/your-username/pci-dss-gap-assessment.git
-cd pci-dss-gap-assessment
-
-# Open the primary assessment workbook
-# Import workbooks/gap-assessment-workbook.xlsx into Google Sheets
-# or open directly in Excel
-
-# View the scope diagram
-open diagrams/cde-data-flow-map.png
-```
-
-To explore the remediation roadmap, open `roadmap/remediation-roadmap-30-60-90.xlsx` and navigate to the Sprint Planning tab. The risk scoring formulas in `workbooks/risk-scoring-matrix.xlsx` are unlocked and documented inline for full transparency.
