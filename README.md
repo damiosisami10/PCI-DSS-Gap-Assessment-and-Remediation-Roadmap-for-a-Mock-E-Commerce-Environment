@@ -1,47 +1,108 @@
-# PCI-DSS-Gap-Assessment-and-Remediation-Roadmap-for-a-Mock-E-Commerce-Environment
-A structured PCI DSS v4.0 gap assessment of a simulated e-commerce environment, producing a prioritized remediation roadmap that reduced the mock organization's compliance gap by 68% across all 12 requirements.
-Overview
+# PCI DSS Gap Assessment and Remediation Roadmap for a Mock E-Commerce Environment
+
+> A structured PCI DSS v4.0 gap assessment of a simulated e-commerce environment, producing a prioritized remediation roadmap that reduced the mock organization's compliance gap by 68% across all 12 requirements.
+
+## Overview
+
 This project simulates the full lifecycle of a PCI DSS compliance engagement, from scoping and evidence collection through gap analysis, risk scoring, and remediation planning. The environment models a small e-commerce retailer that processes card-present and card-not-present transactions, stores cardholder data in a flat-file database, and relies on a mixed on-premises and cloud infrastructure. I designed this project to mirror the type of assessment work an IT Compliance Analyst would own day-to-day.
 
 The core deliverable is a gap assessment workbook mapped to all 12 PCI DSS v4.0 requirements, paired with a remediation roadmap that assigns owners, deadlines, and effort estimates to each finding. Rather than treating compliance as a binary pass/fail exercise, I applied a maturity model scoring approach, rating each control domain on a 1-5 scale so stakeholders can visualize progress over time and prioritize resources toward the highest-risk gaps first.
 
 This project is directly relevant to compliance analyst roles in regulated industries, including life sciences and diagnostics, where data integrity, audit readiness, and cross-functional remediation coordination are essential. The outputs are designed to be immediately useful to a QSA, an internal audit committee, or a security engineering team picking up remediation tickets.
 
-What I Built / Key Features
-PCI DSS v4.0 Gap Assessment Workbook: A structured spreadsheet mapping all 12 requirements and their sub-controls to current-state evidence, gap findings, and compliance status (compliant, partial, non-compliant).
-Maturity Model Scoring Dashboard: A visual scorecard rating each control domain on a 1-5 maturity scale, rendered as a radar chart for executive-level reporting.
-Risk-Based Prioritization Matrix: A risk scoring model that combines likelihood and impact ratings to rank findings, ensuring remediation effort targets critical gaps before cosmetic ones.
-Remediation Roadmap: A phased project plan organized into 30/60/90-day sprints, with each action item tied to a specific PCI DSS requirement, a responsible owner role, and a complexity estimate.
-Scope Diagram and Data Flow Map: A visual representation of the cardholder data environment (CDE), showing data ingress, storage, and egress points used to define the assessment boundary.
-Evidence Inventory Template: A reusable artifact log that maps required evidence types to collection methods, making repeat assessments faster and audit trails cleaner.
-Skills & Tools Demonstrated
-Compliance Frameworks
+## What I Built / Key Features
 
-PCI DSS v4.0 (all 12 requirements)
-NIST Cybersecurity Framework (referenced for control mapping)
-Compliance maturity modeling (CMM-inspired 1-5 scale)
-Analysis and Documentation
+- **PCI DSS v4.0 Gap Assessment Workbook:** A structured spreadsheet mapping all 12 requirements and their sub-controls to current-state evidence, gap findings, and compliance status (compliant, partial, non-compliant).
+- **Maturity Model Scoring Dashboard:** A visual scorecard rating each control domain on a 1-5 maturity scale, rendered as a radar chart for executive-level reporting.
+- **Risk-Based Prioritization Matrix:** A risk scoring model that combines likelihood and impact ratings to rank findings, ensuring remediation effort targets critical gaps before cosmetic ones.
+- **Remediation Roadmap:** A phased project plan organized into 30/60/90-day sprints, with each action item tied to a specific PCI DSS requirement, a responsible owner role, and a complexity estimate.
+- **Scope Diagram and Data Flow Map:** A visual representation of the cardholder data environment (CDE), showing data ingress, storage, and egress points used to define the assessment boundary.
+- **Evidence Inventory Template:** A reusable artifact log that maps required evidence types to collection methods, making repeat assessments faster and audit trails cleaner.
 
-Microsoft Excel and Google Sheets for gap workbook and risk matrices
-Lucidchart for data flow diagrams and CDE scope maps
-Markdown for structured policy and procedure drafting
-Risk Management
+## Skills & Tools Demonstrated
 
-Likelihood and impact scoring using a 5x5 risk matrix
-Risk-based remediation prioritization
-Control gap root cause categorization (people, process, technology)
-Project and Visual Management
+**Compliance Frameworks**
+- PCI DSS v4.0 (all 12 requirements)
+- NIST Cybersecurity Framework (referenced for control mapping)
+- Compliance maturity modeling (CMM-inspired 1-5 scale)
 
-Gantt-style remediation roadmap built in Google Sheets
-Radar chart dashboards for maturity visualization
-RACI-style owner assignment for remediation tasks
-Architecture & Approach
+**Analysis and Documentation**
+- Microsoft Excel and Google Sheets for gap workbook and risk matrices
+- Lucidchart for data flow diagrams and CDE scope maps
+- Markdown for structured policy and procedure drafting
+
+**Risk Management**
+- Likelihood and impact scoring using a 5x5 risk matrix
+- Risk-based remediation prioritization
+- Control gap root cause categorization (people, process, technology)
+
+**Project and Visual Management**
+- Gantt-style remediation roadmap built in Google Sheets
+- Radar chart dashboards for maturity visualization
+- RACI-style owner assignment for remediation tasks
+
+## Architecture & Approach
+
 The assessment follows a four-phase methodology modeled on how a QSA engagement or internal compliance review would actually run.
 
+```text
 Phase 1: Scoping          Phase 2: Gap Analysis       Phase 3: Risk Scoring      Phase 4: Roadmap
 ------------------        ---------------------        ---------------------      ----------------
 Define CDE boundary  -->  Map controls to v4.0   -->  Score likelihood and   --> Assign owners,
 Inventory assets          evidence inventory          impact per finding        set sprint targets,
 Document data flows       Identify gaps               Prioritize by risk        estimate effort
                           Rate maturity (1-5)         score                     Track to closure
+```
+
 Each phase produces a discrete artifact, so the project folder functions as a self-contained audit package. The risk scoring model is intentionally kept transparent and formula-driven so that any reviewer can audit the scoring logic directly in the spreadsheet rather than trusting a black-box output.
+
+## Suggested Repository Structure
+
+```text
+pci-dss-gap-assessment/
+├── README.md
+├── docs/
+│   ├── scope-and-methodology.md
+│   └── mock-environment-overview.md
+├── diagrams/
+│   ├── cde-data-flow-map.png
+│   └── network-scope-diagram.png
+├── workbooks/
+│   ├── gap-assessment-workbook.xlsx
+│   ├── risk-scoring-matrix.xlsx
+│   └── evidence-inventory-template.xlsx
+├── roadmap/
+│   ├── remediation-roadmap-30-60-90.xlsx
+│   └── raci-owner-matrix.xlsx
+└── dashboards/
+    ├── maturity-radar-chart.png
+    └── compliance-summary-scorecard.png
+```
+
+## What This Demonstrates to Employers
+
+- **Shows ability to scope and execute a structured compliance assessment** using an industry-standard framework, from initial boundary definition through final reporting.
+- **Demonstrates familiarity with PCI DSS v4.0** at a control-by-control level, including the updated customized approach and targeted risk analysis requirements introduced in v4.0.
+- **Shows a risk-based mindset** by prioritizing remediation effort using scored likelihood and impact ratings rather than treating all gaps as equally urgent.
+- **Demonstrates ability to translate technical findings into business-readable outputs,** including executive dashboards, radar charts, and phased roadmaps suitable for steering committee review.
+- **Shows readiness to coordinate cross-functional remediation work,** with RACI assignments and sprint-based planning that mirrors how compliance programs operate inside organizations like SCIEX.
+- **Demonstrates documentation discipline and audit readiness,** producing reusable templates and evidence inventories that reduce the effort of future assessment cycles.
+
+## Getting Started
+
+**Prerequisites:** Microsoft Excel or Google Sheets, a PDF viewer, and Lucidchart (free tier) or draw.io to view and edit diagrams.
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/pci-dss-gap-assessment.git
+cd pci-dss-gap-assessment
+
+# Open the primary assessment workbook
+# Import workbooks/gap-assessment-workbook.xlsx into Google Sheets
+# or open directly in Excel
+
+# View the scope diagram
+open diagrams/cde-data-flow-map.png
+```
+
+To explore the remediation roadmap, open `roadmap/remediation-roadmap-30-60-90.xlsx` and navigate to the Sprint Planning tab. The risk scoring formulas in `workbooks/risk-scoring-matrix.xlsx` are unlocked and documented inline for full transparency.
