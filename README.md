@@ -56,33 +56,7 @@ Document data flows       Identify gaps               Prioritize by risk        
 
 Each phase produces a discrete artifact, so the project folder functions as a self-contained audit package. The risk scoring model is intentionally kept transparent and formula-driven so that any reviewer can audit the scoring logic directly in the spreadsheet rather than trusting a black-box output.
 
-## Suggested Repository Structure
-
-```text
-pci-dss-gap-assessment/
-├── README.md
-├── docs/
-│   ├── scope-and-methodology.md
-│   └── mock-environment-overview.md
-├── diagrams/
-│   ├── cde-data-flow-map.png
-│   └── network-scope-diagram.png
-├── workbooks/
-│   ├── gap-assessment-workbook.xlsx
-│   ├── risk-scoring-matrix.xlsx
-│   └── evidence-inventory-template.xlsx
-├── roadmap/
-│   ├── remediation-roadmap-30-60-90.xlsx
-│   └── raci-owner-matrix.xlsx
-└── dashboards/
-    ├── maturity-radar-chart.png
-    └── compliance-summary-scorecard.png
-```
-
-## What This Demonstrates to Employers
-
-- **Shows ability to scope and execute a structured compliance assessment** using an industry-standard framework, from initial boundary definition through final reporting.
-- **Demonstrates familiarity with PCI DSS v4.0** at a control-by-control level, including the updated customized approach and targeted risk analysis requirements introduced in v4.0.
+in v4.0.
 - **Shows a risk-based mindset** by prioritizing remediation effort using scored likelihood and impact ratings rather than treating all gaps as equally urgent.
 - **Demonstrates ability to translate technical findings into business-readable outputs,** including executive dashboards, radar charts, and phased roadmaps suitable for steering committee review.
 - **Shows readiness to coordinate cross-functional remediation work,** with RACI assignments and sprint-based planning that mirrors how compliance programs operate inside organizations like SCIEX.
