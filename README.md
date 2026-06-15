@@ -60,7 +60,7 @@ Document data flows       Identify gaps               Prioritize by risk        
 | Document | Link |
 |---|---|
 | GAP Assessment (Google Sheets) | [Open in Google Sheets](https://docs.google.com/spreadsheets/d/12nnvc9DjnP7XqpdUuUuUycrVyaQiLhK6dzEGnenLCqI/edit?usp=sharing) |
-| Network Scope Diagram (Draw.io) | [Open in draw.io](https://drive.google.com/file/d/1WLfN6lyDHTO6qhAkEo-1o8ZJkEaOM_pQ/view?usp=sharing) |
+| Network Scope Diagram (Google Drive) | [Open in Google Drive](https://drive.google.com/file/d/1rUzVXn49PS-2J0l-VE-rTX3A1WDUl55B/view?usp=sharing) |
 | Executive Summary (Google Slides) | [Open in Google Slides](https://docs.google.com/presentation/d/1qjZtbCpy5xDWUJMHs4E1Ri07diEA8uUTnuJXZYn5taA/edit?usp=sharing) |
 | Project Notes (Notion) | [Open in Notion](https://www.notion.so/Verdant-Commerce-PCI-DSS-Remediation-Roadmap-v1-0-37e55711d5cd80699c79e3ae6c336f63?source=copy_link) |
 Each phase produces a discrete artifact, so the project folder functions as a self-contained audit package. The risk scoring model is intentionally kept transparent and formula-driven so that any reviewer can audit the scoring logic directly in the spreadsheet rather than trusting a black-box output.
